@@ -5,12 +5,11 @@
 - Removed NaNs from 'Year of Record' column (~ 4000)
 **NOTE:** 'Year of Record' , 'Housing Situation' are good features to consider
 **NOTE** 'Crime Level' doesn't look like it's correlating with 'Total Income'
--  
 
 ......
 
-1- The data was pre-processed such as dealing with NaNs, removing repeated rows and encoding categorical features. For the latter, TargetEncoder and sklearn's LabelEncoder were used. TargetEncoder yielded much better results. Some features were dropped based on the correlation between the features and the target.
-2- A number of algorithms were tested. Here is the order of performance from worse to best:
+- The data was pre-processed such as dealing with NaNs, removing repeated rows and encoding categorical features. For the latter, TargetEncoder and sklearn's LabelEncoder were used. TargetEncoder yielded much better results. Some features were dropped based on the correlation between the features and the target.
+- A number of algorithms were tested. Here is the order of performance from worse to best:
 	- Polynomial Regression with degree = 2 (score 1570202.24273)
 	- Ridge Regression (Score 79605)
 	- LightGBM -gradiant boosting (score 13708.404 with LabelEncoder and 10758.372 with TargetEncoding)

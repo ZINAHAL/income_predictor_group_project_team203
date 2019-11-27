@@ -9,6 +9,7 @@
 .........
 
 - The given data is synthetic ie not based on real data so there is a possibility that your hair color effects your income
+- **SCORE:** Mean Absolute Error
 - The data was pre-processed such as dealing with NaNs, removing repeated rows and encoding categorical features. For the latter, TargetEncoder and sklearn's LabelEncoder were used. TargetEncoder yielded much better results. Some features were dropped based on the correlation between the features and the target. Not much data preprocessing was done, the work was left to a strong algorithm to work out.
 - A number of algorithms were tested. Here is the order of performance from worse to best:
 	- Polynomial Regression with degree = 2 (score 1570202.24273)
